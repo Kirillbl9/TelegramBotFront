@@ -1,0 +1,11 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div><a href="https://t.me/VistarTest_bot" class="navbar-brand">Bot</a></div>
+    <ul class="navbar-nav">
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/main-page" class="nav-link">Main page</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/message-list" class="nav-link">Message list</a></li>
+      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+    </ul>
+  </nav>
+</header>

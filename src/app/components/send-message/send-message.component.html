@@ -1,0 +1,19 @@
+<div class="col-md-8">
+  <h2 class="text-center">Send message</h2>
+  <form>
+    <div class="form-group">Author chat ID
+      <textarea type="name" [(ngModel)]="message.authorId"  name="authorId" class="form-control" id="authorId"></textarea>
+      <div class="form-group">
+      </div>
+    </div>
+    <div class="form-group">Text
+      <textarea type="name" [(ngModel)]="message.text"  name="text" class="form-control" id="text"></textarea>
+      <div class="form-group">
+      </div>
+    </div>
+    <button class="btn btn-outline-secondary"  (click)="sendMessage()" >Send</button>
+  </form>
+</div>
+
+
+

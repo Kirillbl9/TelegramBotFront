@@ -1,0 +1,22 @@
+<div class="row">
+<div class="col-md-6">
+  <h2 class="text-center">List of messages</h2>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Author chat ID</th>
+      <th>Text</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let mes of messages">
+      <td>{{mes.authorId}}</td>
+      <td>{{mes.text}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div class="col-md-6">
+<button class="btn btn-outline-secondary"  (click)="reverse()" >Turn list</button>
+</div>
+</div>

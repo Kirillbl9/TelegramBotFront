@@ -1,0 +1,26 @@
+<form>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="text-center">List of messages</h2>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Author chat ID</th>
+          <th>Text</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let mes of messages">
+          <td>{{mes.authorId}}</td>
+          <td>{{mes.text}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=" col-md-3" >
+      <h6 style="text-align:  center">Enter ID</h6>
+      <input type="name" [(ngModel)]="currentId" name="text" class="form-control" id="text">
+      <button class="btn btn-primary btn-block" (click)="getById()">Find</button>
+    </div>
+  </div>
+</form>
