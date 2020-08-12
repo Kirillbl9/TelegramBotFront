@@ -1,6 +1,4 @@
 export class User {
-  constructor(
-    public status: string,
-  ) {
+  constructor(public status: string) {
   }
 }

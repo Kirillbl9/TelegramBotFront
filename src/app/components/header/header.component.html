@@ -5,7 +5,7 @@
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/main-page" class="nav-link">Main page</a></li>
       <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/message-list" class="nav-link">Message list</a></li>
       <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
-      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" (click)="loginComponent.logOut()"  class="nav-link">Logout</a></li>
     </ul>
   </nav>
 </header>
